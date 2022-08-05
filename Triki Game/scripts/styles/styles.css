@@ -47,3 +47,30 @@ font-weight: 500;
     background-color:purple;
 }
 
+.result{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.resert{
+    text-align: center;
+    margin: 10px 0;
+}
+
+#resert{
+    border: 1px solid;
+    cursor: pointer;
+    color:  rgb(0, 0, 0);
+    background-color:plum;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    margin: 7px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#resert:hover{
+    color: aliceblue;
+    background-color: purple;
+
+}
