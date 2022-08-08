@@ -7,6 +7,11 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+.color{
+    background:radial-gradient(circle, rgb(187, 22, 85), rgb(25, 158, 211)) ;
+
+}
+
 .header{
     display: flex;
     justify-content:center ;
@@ -22,7 +27,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 1.5rem;
-box-shadow: inset 0px 1px 4px 0 rgb(130, 12, 83);
+box-shadow: inset 0px 1px 4px 0 rgba(130, 12, 83, 0);
 
 
 }
@@ -53,8 +58,10 @@ font-weight: 500;
 }
 
 .resert{
+    margin: 0.5rem;
     text-align: center;
     margin: 10px 0;
+    text-transform: uppercase;
 }
 
 #resert{
