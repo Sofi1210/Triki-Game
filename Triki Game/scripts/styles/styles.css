@@ -57,14 +57,14 @@ font-weight: 500;
     font-size: 1.3rem;
 }
 
-.resert{
+.reset{
     margin: 0.5rem;
     text-align: center;
     margin: 10px 0;
     text-transform: uppercase;
 }
 
-#resert{
+#reset{
     border: 1px solid;
     cursor: pointer;
     color:  rgb(0, 0, 0);
@@ -76,7 +76,7 @@ font-weight: 500;
     transition: all 0.3s ease-in-out;
 }
 
-#resert:hover{
+#reset:hover{
     color: aliceblue;
     background-color: purple;
 

@@ -22,13 +22,45 @@ const triki=(element,i)=>{
     element.disabled=true;
     celdas[i]=jugadorActual;
     if (jugadorActual=="🖤"){
-        jugadorActual="🧤";
+        jugadorActual="🍑";
     }else{
         jugadorActual="🖤";
     }
 
     resultado.innerHTML=`Player ${jugadorActual} Turn`
+
+    for (let i = 0; i < condiciones.length; i++) {
+        let condicion=condiciones[i];
+        let a=celdas[condicion[0]];
+        let b=celdas[condicion[1]];
+        let c=celdas[condicion[2]];
+
+       if (a == "" || b == "" || c == ""){
+           continue;
+
+       } 
+       if (a==b && b==c){
+           resultado.innerHTML=`Player ${a} won ✨🎉😘`
+           botones.forEach((btn)=>{btn.disabled=true })
+       }
+        
+    }
 }
+const reset=()=>{
+    celdas=["","","","","","","","",""];
+   botones.forEach(element=>{
+       element.value="";
+       element.disabled=false;
+   })
+
+jugadorActual="🖤"
+resultado.innerHTML=`Player ${jugadorActual}`
+
+}
+
+
+
+document.querySelector("#reset").addEventListener("click",reset )
 
 botones.forEach((boton, indice)=>{
     boton.addEventListener("click",()=>{triki(boton,indice)})
